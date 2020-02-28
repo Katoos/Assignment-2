@@ -1,4 +1,4 @@
-package eg.edu.alexu.csd.datastructure.hangman.cs48;
+package eg.edu.alexu.csd.datastructure.hangman.cs7;
 import eg.edu.alexu.csd.datastructure.hangman.IHangman;
 import java.util.Random;
 
@@ -9,24 +9,8 @@ public class hangman implements IHangman {
 	public String currentWord = "";
 	@Override
 	public void setDictionary(String[] words) {
-		// TODO Auto-generated method stub
-		/* to read from a file */
-		/*
-		 * File f1 =new File("samplefile.txt"); String str ; BufferedReader br
-		 * =new BufferedReader(new FileReader(f1)); int i=0; while
-		 * ((str=br.readLine())!=null) { words[i]=str; word[i]=words[i]; i++; }
-		 * br.close();
-		 */
 		word = words;
-
 	}
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * eg.edu.alexu.csd.datastructure.hangman.IHangman#selectRandomSecretWord()
-	 */
 	@Override
 	public String selectRandomSecretWord() {
 		// TODO Auto-generated method stub
@@ -88,7 +72,5 @@ public class hangman implements IHangman {
 			maxWrongGuess = 1;
 		} else
 			maxWrongGuess = max;
-
 	}
-
 }
